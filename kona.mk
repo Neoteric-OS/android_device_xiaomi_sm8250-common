@@ -161,6 +161,9 @@ PRODUCT_PACKAGES += \
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 
+# Memtrack
+TARGET_USE_AIDL_QTI_MEMTRACK := true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
