@@ -442,9 +442,6 @@ vendor/etc/system_properties.xml
 vendor/bin/mlid
 vendor/lib64/libminksocket.so
 
-# NVRAM
-vendor/bin/nv_mac
-
 # OMX
 vendor/lib/libOmxAacEnc.so
 vendor/lib/libOmxAacDec.so
