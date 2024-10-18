@@ -12,3 +12,6 @@ vendor.xiaomi.hardware.motor::IMotor                                            
 
 # NFC
 vendor.nxp.nxpnfc_aidl.INxpNfc/default                              u:object_r:hal_nfc_service:s0
+
+# Dolby
+vendor.dolby.hardware.dms::IDms u:object_r:hal_dms_hwservice:s0
