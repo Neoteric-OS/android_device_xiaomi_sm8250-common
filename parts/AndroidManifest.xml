@@ -72,7 +72,7 @@
                 android:resource="@string/summary_empty" />
             <meta-data
                 android:name="com.android.settings.order"
-                android:value="-255" />
+                android:value="99" />
         </activity>
 
         <activity
