@@ -88,6 +88,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
+        vendor/etc/init/vendor.qti.media.c2@1.0-service.rc)
+            [ "$2" = "" ] && return 0
+            grep -q "task_profiles" "${2}" || sed -i "s|writepid /dev/cpuset/foreground/tasks|task_profiles ProcessCapacityHigh HighPerformance|g" "${2}"
+            ;;
         *)
             return 1
             ;;
