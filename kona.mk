@@ -233,6 +233,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor
 endif
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
