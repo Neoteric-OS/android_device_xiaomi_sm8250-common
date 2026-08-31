@@ -309,8 +309,6 @@ PRODUCT_PACKAGES += \
 
 # Media configs
 PRODUCT_PACKAGES += \
-    media_codecs_c2.xml \
-    media_codecs_performance_c2.xml \
     media_codecs_kona.xml \
     media_codecs_performance_kona.xml \
     video_system_specs.json \
@@ -398,7 +396,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     perf \
     telephony \
     wfd \
-    wlan
+    wlan \
+    media
 
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
